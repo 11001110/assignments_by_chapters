@@ -36,4 +36,4 @@ puts 21.1 * 21.1
 puts 23.1 * 23.1
 
 #example 7
-# The array or the hash was left without closing the list
+# The array or the hash was left without closing the list.
