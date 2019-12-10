@@ -34,4 +34,4 @@ puts "Hi there " + first + " " + last + " !"
 
 #exercise 5
 # The first coding example is correct, but in the second example
-#the x isn't defined in the scope.
+#the x isn't defined in the scope...
