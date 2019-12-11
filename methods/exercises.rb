@@ -14,7 +14,23 @@ puts greeting("Justin")
 
 #exercise 3
 def multiply(num1, num2)
-  num1 * num2
+  product = num1 * num2
 end
 
 puts multiply(10, 10)
+
+#exercise 4
+#Nothing is returned.  Any form of a puts command will be returned.
+
+#exercise 5
+def scream(words)
+  words = words + "!!!!"
+end
+
+puts scream("Yippeee")
+
+#It returned nil.
+
+
+#exercise 6
+#There's a method that requires 2 inputs, but only one was entered.
