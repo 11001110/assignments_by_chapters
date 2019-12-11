@@ -1,9 +1,12 @@
 #exercise 1
 #name.#!/usr/bin/env ruby -wKU
-print "What's your name? "
-name = gets.chomp
-name.capitalize!
-puts "Hi there #{name}!"
+print "What's your first name? "
+first = gets.chomp
+first.capitalize!
+print "What's your last name? "
+last = gets.chomp
+last.capitalize!
+puts "Hi there #{first} #{last}!"
 
 #exercise 2
 #age.#!/usr/bin/env ruby -wKU
