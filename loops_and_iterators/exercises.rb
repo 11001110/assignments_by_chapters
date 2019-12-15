@@ -12,13 +12,17 @@ while ans != 'Stop'
 end
 
 
-
 #exercise 3
 list = ["Aspen", "Deklin", "Justin", "Brookes"]
 
-list.each_with_index do |list, x|
-  puts "#{x + 1}.  #{list}"
-  x += 1
+list.each_with_index { |list, val| puts "#{val + 1}.  #{list}" }
+
+#or
+
+list = ["Aspen", "Deklin", "Justin", "Brookes"]
+list.each_with_index do |list, val|
+  puts "#{val + 1}.  #{list}"
+  val += 1
 end
 
 
