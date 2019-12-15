@@ -18,7 +18,7 @@ list = ["Aspen", "Deklin", "Justin", "Brookes"]
 x = 1
 
 list.each_with_index do |list, x|
-  puts "#{x},  #{list}"
+  puts "#{x}.  #{list}"
   x += 1
 end
 
