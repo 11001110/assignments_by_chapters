@@ -3,16 +3,18 @@
 
 
 #exercise 2
-x = ''
-while x != "Stop" do
-  puts "Do you want me to keep asking you a question?"
-  x = gets.chomp.capitalize!
+puts "Want to talk?"
+ans = gets.chomp.capitalize!
+
+while ans != 'Stop'
+  puts "OK, I'll ask again..."
+  ans = gets.chomp.capitalize!
 end
+
 
 
 #exercise 3
 list = ["Aspen", "Deklin", "Justin", "Brookes"]
-x = 1
 
 list.each_with_index do |list|
   puts "#{x} #{list}"
@@ -21,16 +23,19 @@ end
 
 
 #exercise 4
-puts "Please enter a number:"
-num = gets.chomp.to_i
-
-def countdown(num)
-  if num >= 1
-    puts num
-    countdown(num-1)
+def countdown(x)
+  if x <= 0
+    puts x
   else
-    puts num
+    puts x
+    countdown(x -= 1)
   end
 end
 
-countdown(num)
+puts "Please enter a number for a countdown:"
+x = gets.chomp.to_i
+if x <= 0
+  puts "Not a positive number."
+else
+  countdown(x)
+end
