@@ -1,17 +1,11 @@
-puts "Guess a number:"
-x = gets.chomp.to_i
 
-def guess(num)
-  case
-  when x < 0
-    puts "Not a positive number."
-  when x <= 50
-    puts "#{x} is between 0 and 50."
-  when x <=  100
-    puts "#{x} is between 51 and 100."
-  else
-    puts "#{x} is greater than 100."
-  end
+arr = [1, 3, 5, 7, 9, 11]
+
+puts "Guess a number"
+guess = gets.chomp.to_i
+
+if arr.include?(guess)
+  puts "#{guess} is in the array."
+else
+  puts "#{guess} is not in the array."
 end
-
-guess(x)
