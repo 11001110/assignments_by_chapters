@@ -11,6 +11,25 @@ while ans != 'Stop'
   ans = gets.chomp.capitalize!
 end
 
+#or
+
+x = ""
+while x != "STOP" do
+  puts "Hi, How are you feeling?"
+  ans = gets.chomp
+  puts "Want me to ask you again?"
+  x = gets.chomp
+end
+
+#or a fun one...lol
+
+x = ""
+while x != "STOP" do
+  puts "Hi, How are you feeling?"
+  x = gets.chomp.upcase!
+  x == "STOP" ? "STOP" : nil
+end
+
 
 #exercise 3
 list = ["Aspen", "Deklin", "Justin", "Brookes"]
@@ -36,10 +55,4 @@ def countdown(x)
   end
 end
 
-puts "Please enter a number for a countdown:"
-x = gets.chomp.to_i
-if x <= 0
-  puts "Not a positive number."
-else
-  countdown(x)
-end
+countdown(10)
