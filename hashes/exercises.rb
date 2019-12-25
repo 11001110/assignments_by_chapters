@@ -57,4 +57,34 @@ v = gets.chomp
   end
 
 
-  #exercise 6
+#exercise 6
+# x = "hi there"
+# my_hash = {x: "some value"}
+# my_hash2 = {x => "some value"}
+#
+# x: is a key
+# x is a variable
+
+
+#exercise 7
+#B. There is no method called keys for Array objects
+
+
+#exercise 8
+words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
+          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
+          'flow', 'neon']
+new = {}
+
+words.each do |word|
+  val = word.split('').sort.join
+  if new.has_key?(val)
+    new[val].push(word)
+  else
+    new[val] = [word]
+  end
+end
+
+new.each_value do |v|
+  p v
+end
