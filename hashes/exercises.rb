@@ -76,15 +76,11 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
           'flow', 'neon']
 new = {}
 
-words.each do |word|
-  val = word.split('').sort.join
-  if new.has_key?(val)
-    new[val].push(word)
+words.map do |n|
+  word = n.split("").sort.join
+  if word == new
+    word << new
   else
-    new[val] = [word]
+    new
   end
-end
-
-new.each_value do |v|
-  p v
-end
+end 
