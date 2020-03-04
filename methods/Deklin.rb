@@ -1,6 +1,6 @@
-puts "Guess a number between 1 and 150."
+puts "Guess a number between 1 and 200."
 x = gets.chomp.to_i
-y = rand(151)
+y = rand(200) + 1
 
 loop do
   if x < y
@@ -10,7 +10,7 @@ loop do
     puts "Guess lower."
     x = gets.chomp.to_i
   else
-    puts "Awesome! #{y} is the right number!"
+    puts "Awesome, Deklin! #{y} is the right number! I love you Dmac"
     break
   end
 end
